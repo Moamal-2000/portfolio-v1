@@ -1,5 +1,6 @@
 import { useState } from "react";
 import userPlaceHolderImg from "src/Assets/user-picture-placeholder.webp";
+import { NAV_LINKS } from "src/Data/variables";
 import s from "./Header.module.scss";
 
 const Header = () => {
@@ -21,18 +22,11 @@ const Header = () => {
 
       <nav className={s.nav}>
         <ul>
-          <li>
-            <a href="/#"> Home </a>
-          </li>
-          <li>
-            <a href="/#about"> About </a>
-          </li>
-          <li>
-            <a href="/#projects"> Projects </a>
-          </li>
-          <li>
-            <a href="/#contact"> Contact </a>
-          </li>
+          {NAV_LINKS.map(({ name, link }) => (
+            <li key={`${name}`}>
+              <a href={link}>{name}</a>
+            </li>
+          ))}
         </ul>
       </nav>
 
@@ -40,6 +34,7 @@ const Header = () => {
         type="button"
         className={s.navButton}
         onClick={updateMobileMenuState}
+        aria-label="Mobile Menu button"
       >
         <div className={s.line} />
         <div className={s.line} />
@@ -53,18 +48,11 @@ const Header = () => {
         />
 
         <ul className={`${s.menuLinks} ${activeClass}`}>
-          <li>
-            <a href="/#"> Home </a>
-          </li>
-          <li>
-            <a href="/#about"> About </a>
-          </li>
-          <li>
-            <a href="/#projects"> Projects </a>
-          </li>
-          <li>
-            <a href="/#contact"> Contact </a>
-          </li>
+          {NAV_LINKS.map(({ name, link }) => (
+            <li key={`${name}`}>
+              <a href={link}>{name}</a>
+            </li>
+          ))}
         </ul>
       </div>
     </header>
