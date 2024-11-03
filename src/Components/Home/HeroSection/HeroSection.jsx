@@ -1,3 +1,4 @@
+import ColoredButton from "../../Shared/Buttons/ColoredButton/ColoredButton";
 import s from "./HeroSection.module.scss";
 
 const HeroSection = () => {
@@ -11,6 +12,10 @@ const HeroSection = () => {
             I'm John Anderson! A Web Developer Building Awesome Webapps And
             Websites That Powers The Internet
           </h1>
+
+          <div className="buttons">
+            <ColoredButton href="#projects" text="Projects" />
+          </div>
         </div>
       </div>
     </section>
