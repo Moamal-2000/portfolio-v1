@@ -1,7 +1,15 @@
+import { useState } from "react";
 import userPlaceHolderImg from "src/Assets/user-picture-placeholder.webp";
 import s from "./Header.module.scss";
 
 const Header = () => {
+  const [isMobileMenuActive, setIsMobileMenuActive] = useState(false);
+  const activeClass = isMobileMenuActive ? s.active : "";
+
+  function updateMobileMenuState(state) {
+    setIsMobileMenuActive((prevState) => state || !prevState);
+  }
+
   return (
     <header className={s.header}>
       <a href="/#" className={s.logoContainer}>
@@ -28,14 +36,23 @@ const Header = () => {
         </ul>
       </nav>
 
-      <div className={s.navButton}>
+      <button
+        type="button"
+        className={s.navButton}
+        onClick={updateMobileMenuState}
+      >
         <div className={s.line} />
         <div className={s.line} />
-      </div>
+      </button>
 
-      <div className={s.mobileMenu}>
-        <div className={s.close}></div>
-        <ul className={s.menuLinks}>
+      <div className={`${s.mobileMenu} ${activeClass}`}>
+        <button
+          type="button"
+          className={s.close}
+          onClick={() => updateMobileMenuState(false)}
+        />
+
+        <ul className={`${s.menuLinks} ${activeClass}`}>
           <li>
             <a href="/#"> Home </a>
           </li>
