@@ -9,7 +9,7 @@ const HeroSection = () => {
           <span className={s.hello}> Hello 👋</span>
 
           <h1>
-            I'm John Anderson! A Web Developer Building Awesome Webapps And
+            I'm Moamal Alaa! A Web Developer Building Awesome Web apps And
             Websites That Powers The Internet
           </h1>
 
