@@ -21,3 +21,9 @@
     width: 100%;
   }
 }
+
+.button.secondary {
+  background-color: transparent;
+  color: rgba(var(--themeColor), 1);
+  border-color: rgba(var(--themeColor), 1);
+}

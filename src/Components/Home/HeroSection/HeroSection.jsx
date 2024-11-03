@@ -13,8 +13,13 @@ const HeroSection = () => {
             Websites That Powers The Internet
           </h1>
 
-          <div className="buttons">
+          <div className={s.buttons}>
             <ColoredButton href="#projects" text="Projects" />
+            <ColoredButton
+              href="#contact"
+              text="Contact"
+              styleType="secondary"
+            />
           </div>
         </div>
       </div>

@@ -79,6 +79,19 @@
   }
 }
 
+.heroSection .buttons {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+@include very-small {
+  .heroSection .buttons {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
 @keyframes downToUp {
   0% {
     opacity: 0;
