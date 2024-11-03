@@ -1,0 +1,152 @@
+@import "src/Styles/mixins.scss";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 10px 100px -5px #eee;
+  z-index: 1000;
+  background: #fff;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.imgHolder {
+  margin-right: 1.5rem;
+  width: 4rem;
+  height: 4rem;
+  overflow: hidden;
+  border-radius: 10rem;
+  background: rgba(var(--themeColor), 1);
+}
+
+.imgHolder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.logoText {
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+  color: #000;
+  font-weight: 400;
+}
+
+.nav ul {
+  display: flex;
+  align-items: center;
+}
+
+.nav ul li {
+  padding: 1.3rem 2rem;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  color: #000;
+  font-weight: 400;
+}
+
+@media (max-width: 56.25em) {
+  .nav ul li {
+    padding: 1.3rem 1.5rem;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .nav ul {
+    display: none;
+  }
+}
+
+.navButton {
+  padding: 1rem 1rem;
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 37.5em) {
+  .navButton {
+    display: block;
+  }
+}
+
+.navButton .line {
+  height: 1px;
+  background: #000;
+  width: 3rem;
+  border-radius: 50px;
+}
+
+.navButton .line:first-child {
+  margin-bottom: 8px;
+}
+
+.mobileMenu {
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 40rem;
+  transform: translateX(-100%);
+  transition: transform 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &.active {
+    transform: translateX(0);
+  }
+}
+
+.close {
+  position: absolute;
+  top: 3.3rem;
+  right: 2.5rem;
+  width: 3rem;
+  height: 3rem;
+}
+
+.close:before,
+.close:after {
+  position: absolute;
+  content: ' ';
+  height: 3rem;
+  width: 1px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #000;
+}
+
+.close:before {
+  transform: rotate(45deg);
+}
+
+.close:after {
+  transform: rotate(-45deg);
+}
+
+.menuLinks {
+  width: 90%;
+}
+
+.menuLinks li {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.3s, transform 0.3s;
+  font-size: 2.5rem;
+  text-align: center;
+  display: block;
+  padding: 3rem;
+  color: #555;
+}
