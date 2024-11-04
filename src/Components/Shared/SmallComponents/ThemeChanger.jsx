@@ -1,17 +1,20 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { hexToRgb } from "src/Functions/helper";
+import useLocalStorage from "../../../Hooks/Helper/useLocalStorage";
 import s from "./ThemeChanger.module.scss";
 
 const ThemeChanger = () => {
-  const [themeColor, setThemeColor] = useState("#1DA1F2");
+  const [themeColor] = useState("#1DA1F2");
+
+  useEffect(() => {
+    const themeColorLocal = useLocalStorage("themeColor");
+    if (themeColor) setThemeColor(themeColorLocal);
+  }, []);
 
   function handleChangeColor(event) {
     const { r, g, b } = hexToRgb(event.target.value);
-
-    document.documentElement.style.setProperty(
-      "--themeColor",
-      `${r}, ${g}, ${b}`
-    );
+    const rgbColor = `${r}, ${g}, ${b}`;
+    setThemeColor(rgbColor);
   }
 
   return (
@@ -30,3 +33,8 @@ const ThemeChanger = () => {
   );
 };
 export default ThemeChanger;
+
+function setThemeColor(color) {
+  document.documentElement.style.setProperty("--themeColor", color);
+  useLocalStorage("themeColor", color);
+}
