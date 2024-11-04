@@ -8,14 +8,8 @@ const ThemeChanger = () => {
 
   useEffect(() => {
     const themeColorLocal = useLocalStorage("themeColor");
-    if (themeColor) setThemeColor(themeColorLocal);
+    if (themeColorLocal) setThemeColor(themeColorLocal);
   }, []);
-
-  function handleChangeColor(event) {
-    const { r, g, b } = hexToRgb(event.target.value);
-    const rgbColor = `${r}, ${g}, ${b}`;
-    setThemeColor(rgbColor);
-  }
 
   return (
     <div className={s.themeSelector}>
@@ -33,6 +27,12 @@ const ThemeChanger = () => {
   );
 };
 export default ThemeChanger;
+
+function handleChangeColor(event) {
+  const { r, g, b } = hexToRgb(event.target.value);
+  const rgbColor = `${r}, ${g}, ${b}`;
+  setThemeColor(rgbColor);
+}
 
 function setThemeColor(color) {
   document.documentElement.style.setProperty("--themeColor", color);
