@@ -10,7 +10,7 @@ const Header = () => {
         <div className={s.imgHolder}>
           <img src={userPlaceHolderImg} alt="logo Image" />
         </div>
-        <span className={s.logoText}>Moamal Alaa</span>
+        <h1 className={s.logoText}>Moamal Alaa</h1>
       </a>
 
       <nav className={s.nav}>
