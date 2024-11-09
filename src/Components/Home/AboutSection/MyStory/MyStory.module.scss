@@ -20,6 +20,12 @@
   margin-bottom: 5.5rem;
 }
 
+@include small {
+  .myStory .description {
+    font-size: 1.6rem;
+  }
+}
+
 .myStory .description>span {
   margin-bottom: 1.5rem;
   display: block;
