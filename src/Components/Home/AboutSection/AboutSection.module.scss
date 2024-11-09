@@ -1,5 +1,18 @@
 @import "src/Styles/mixins.scss";
 
 .aboutSection {
-  
+  background-color: #fcfcfc;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 8rem;
+}
+
+@media (max-width: 37.5em) {
+  .wrapper {
+    grid-template-columns: 1fr;
+    grid-gap: 6rem;
+  }
 }
