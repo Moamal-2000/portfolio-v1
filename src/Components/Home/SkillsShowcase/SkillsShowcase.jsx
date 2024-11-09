@@ -1,0 +1,17 @@
+import { SKILLS_SHOWCASE } from "src/Data/variables";
+import s from "./SkillsShowcase.module.scss";
+
+const SkillsShowcase = () => {
+  return (
+    <section className={s.skillsShowcase}>
+      <ul>
+        {SKILLS_SHOWCASE.map(({ skill, imgSrc, id }) => (
+          <li key={id}>
+            <img src={imgSrc} alt={skill} />
+          </li>
+        ))}
+      </ul>
+    </section>
+  );
+};
+export default SkillsShowcase;

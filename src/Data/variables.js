@@ -121,3 +121,26 @@ export const MY_SKILLS = [
     id: 18,
   },
 ];
+
+export const SKILLS_SHOWCASE = [
+  {
+    skill: "HTML",
+    imgSrc: ,
+    id: 0,
+  },
+  {
+    skill: "CSS",
+    imgSrc: ,
+    id: 1,
+  },
+  {
+    skill: "SASS",
+    imgSrc: ,
+    id: 2,
+  },
+  {
+    skill: "JavaScript",
+    imgSrc: ,
+    id: 3,
+  }
+]
