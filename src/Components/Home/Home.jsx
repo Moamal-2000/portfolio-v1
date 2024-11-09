@@ -8,8 +8,9 @@ const Home = () => {
     <main className={s.home}>
       <div className="container">
         <HeroSection />
-        <AboutSection />
       </div>
+
+      <AboutSection />
       <ThemeChanger />
     </main>
   );
