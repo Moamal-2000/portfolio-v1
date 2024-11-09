@@ -5,6 +5,7 @@ const MyStory = () => {
   return (
     <div className={s.myStory}>
       <h3 className={s.title}>My Story</h3>
+
       <p className={s.description}>
         <span>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error,

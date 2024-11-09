@@ -1,5 +1,6 @@
 import SectionTitle from "../../Shared/SmallComponents/SectionTitle/SectionTitle";
 import s from "./AboutSection.module.scss";
+import MySkills from "./MySkills/MySkills";
 import MyStory from "./MyStory/MyStory";
 
 const AboutSection = () => {
@@ -12,6 +13,7 @@ const AboutSection = () => {
 
       <div className={s.wrapper}>
         <MyStory />
+        <MySkills />
       </div>
     </section>
   );
