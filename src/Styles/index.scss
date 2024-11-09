@@ -85,3 +85,14 @@ main {
     width: 92%;
   }
 }
+
+@each $skill, $color in $my-skills-colors {
+  .#{$skill}-color {
+    transition: background-color .2s ease-in-out, color .2s ease-in-out;
+
+    &:hover {
+      background-color: #{$color} !important;
+      color: #fff !important;
+    }
+  }
+}

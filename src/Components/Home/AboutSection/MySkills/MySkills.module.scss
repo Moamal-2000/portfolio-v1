@@ -22,11 +22,18 @@
   font-size: 1.6rem;
   text-transform: uppercase;
   letter-spacing: 1px;
-  padding: 1.5rem 2rem;
   margin-right: 2rem;
   margin-bottom: 2rem;
+  font-weight: 500;
+  border-radius: 5px;
+}
+
+.mySkills .skills li a {
+  display: block;
+  border-radius: inherit;
   background: #eee;
   color: #666;
-  border-radius: 5px;
-  font-weight: 500;
+  padding: 1.5rem 2rem;
+  width: 100%;
+  height: 100%;
 }
