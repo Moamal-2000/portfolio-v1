@@ -1,4 +1,4 @@
-import ThemeChanger from "../Shared/SmallComponents/ThemeChanger";
+import ThemeChanger from "../Shared/SmallComponents/ThemeChange/ThemeChanger";
 import AboutSection from "./AboutSection/AboutSection";
 import HeroSection from "./HeroSection/HeroSection";
 import s from "./Home.module.scss";
