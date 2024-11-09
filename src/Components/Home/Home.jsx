@@ -6,8 +6,10 @@ import s from "./Home.module.scss";
 const Home = () => {
   return (
     <main className={s.home}>
-      <HeroSection />
-      <AboutSection />
+      <div className="container">
+        <HeroSection />
+        <AboutSection />
+      </div>
       <ThemeChanger />
     </main>
   );
