@@ -1,5 +1,95 @@
 @import "src/Styles/mixins.scss";
 
 .skillsShowcase {
-  
+  background: #f7f7f7;
+}
+
+.skillsList {
+  padding: 5rem 3rem;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+@include large {
+  .skillsList {
+    width: 85%;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 5rem 0;
+    gap: 5rem 1rem;
+  }
+}
+
+@include medium {
+  .skillsList {
+    width: 90%;
+    gap: 3rem;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@include small {
+  .skillsList {
+    width: 92%;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 520px) {
+  .skillsList {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@include very-small {
+  .skillsList {
+    gap: 1rem;
+  }
+}
+
+.skillsList li {
+  padding: 3rem;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: rgba(100, 100, 111, .2) 0 7px 29px 0;
+  width: 110px;
+  height: 110px;
+  @include center-x-y;
+}
+
+@include large {
+  .skillsList li {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@include medium {
+  .skillsList li {
+    width: auto;
+    height: 110px;
+    border-radius: 5px;
+    background: #fff;
+  }
+}
+
+@include small {
+  .skillsList li {
+    width: auto;
+    height: auto;
+  }
+}
+
+.skillsList li img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  filter: grayscale(1);
+  transition: filter .2s;
+}
+
+.skillsList li:hover img {
+  filter: grayscale(0);
 }

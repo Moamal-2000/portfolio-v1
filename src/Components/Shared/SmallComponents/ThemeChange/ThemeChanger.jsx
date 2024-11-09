@@ -1,8 +1,5 @@
 import { useEffect, useState } from "react";
-import c from "src/Assets/color-picker.png";
-import df from "src/Assets/default-icon.png";
-import txt from "src/Assets/text-icon.png";
-import bg from "src/Assets/theme-icon.png";
+import { colorPicker, gearIcon, textIcon, themeIcon } from "src/Assets/images";
 import { hexToRgb } from "src/Functions/helper";
 import useLocalStorage from "src/Hooks/Helper/useLocalStorage";
 import s from "./ThemeChanger.module.scss";
@@ -34,7 +31,7 @@ const ThemeChanger = () => {
         onClick={() => setIsMenuActive(true)}
         title="Theme picker"
       >
-        <img src={c} alt="theme color tester" />
+        <img src={colorPicker} alt="theme color tester" />
       </button>
 
       <div className={`${s.menu} ${activeClass}`}>
@@ -45,7 +42,7 @@ const ThemeChanger = () => {
             value={themeColor}
             onChange={(e) => handleChangeColor(e, "themeColor")}
           />
-          <img src={bg} alt="theme color picker" />
+          <img src={themeIcon} alt="theme color picker" />
         </button>
 
         <button type="button" className={s.item} title="Text color">
@@ -55,7 +52,7 @@ const ThemeChanger = () => {
             value={textColor}
             onChange={(e) => handleChangeColor(e, "textColor")}
           />
-          <img src={txt} alt="text color picker" />
+          <img src={textIcon} alt="text color picker" />
         </button>
 
         <button
@@ -64,7 +61,7 @@ const ThemeChanger = () => {
           onClick={setDefaultTheme}
           title="Default theme"
         >
-          <img src={df} alt="gear icon representing default theme" />
+          <img src={gearIcon} alt="gear icon representing default theme" />
         </button>
 
         <button

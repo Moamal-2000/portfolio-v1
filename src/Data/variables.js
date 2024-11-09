@@ -1,3 +1,15 @@
+import {
+  cssLogo,
+  gitLogo,
+  htmlLogo,
+  jsLogo,
+  pwaLogo,
+  reactLogo,
+  reduxLogo,
+  sassLogo,
+  vsCodeLogo,
+} from "../Assets/images";
+
 export const NAV_LINKS = [
   { name: "Home", link: "#home" },
   { name: "About", link: "#about" },
@@ -125,22 +137,47 @@ export const MY_SKILLS = [
 export const SKILLS_SHOWCASE = [
   {
     skill: "HTML",
-    imgSrc: ,
+    imgSrc: htmlLogo,
     id: 0,
   },
   {
     skill: "CSS",
-    imgSrc: ,
+    imgSrc: cssLogo,
     id: 1,
   },
   {
     skill: "SASS",
-    imgSrc: ,
+    imgSrc: sassLogo,
     id: 2,
   },
   {
     skill: "JavaScript",
-    imgSrc: ,
+    imgSrc: jsLogo,
     id: 3,
-  }
-]
+  },
+  {
+    skill: "React",
+    imgSrc: reactLogo,
+    id: 4,
+  },
+  {
+    skill: "Redux",
+    imgSrc: reduxLogo,
+    id: 5,
+  },
+  {
+    skill: "Git",
+    imgSrc: gitLogo,
+    id: 6,
+  },
+  {
+    skill: "visual studio code",
+    imgSrc: vsCodeLogo,
+    id: 7,
+  },
+  {
+    skill: "PWA",
+    imgSrc: pwaLogo,
+    id: 8,
+  },
+];

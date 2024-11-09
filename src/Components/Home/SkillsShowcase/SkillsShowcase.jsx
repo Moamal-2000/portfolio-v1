@@ -4,7 +4,7 @@ import s from "./SkillsShowcase.module.scss";
 const SkillsShowcase = () => {
   return (
     <section className={s.skillsShowcase}>
-      <ul>
+      <ul className={s.skillsList}>
         {SKILLS_SHOWCASE.map(({ skill, imgSrc, id }) => (
           <li key={id}>
             <img src={imgSrc} alt={skill} />
