@@ -138,46 +138,55 @@ export const SKILLS_SHOWCASE = [
   {
     skill: "HTML",
     imgSrc: htmlLogo,
+    link: "https://developer.mozilla.org/en-US/docs/Web/HTML",
     id: 0,
   },
   {
     skill: "CSS",
     imgSrc: cssLogo,
+    link: "https://developer.mozilla.org/en-US/docs/Web/CSS",
     id: 1,
   },
   {
     skill: "SASS",
     imgSrc: sassLogo,
+    link: "https://sass-lang.com/documentation",
     id: 2,
   },
   {
     skill: "JavaScript",
     imgSrc: jsLogo,
+    link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
     id: 3,
   },
   {
     skill: "React",
     imgSrc: reactLogo,
+    link: "https://reactjs.org",
     id: 4,
   },
   {
     skill: "Redux",
     imgSrc: reduxLogo,
+    link: "https://redux.js.org",
     id: 5,
   },
   {
     skill: "Git",
     imgSrc: gitLogo,
+    link: "https://git-scm.com",
     id: 6,
   },
   {
     skill: "visual studio code",
     imgSrc: vsCodeLogo,
+    link: "https://code.visualstudio.com",
     id: 7,
   },
   {
     skill: "PWA",
     imgSrc: pwaLogo,
+    link: "https://web.dev/articles/what-are-pwas",
     id: 8,
   },
 ];
