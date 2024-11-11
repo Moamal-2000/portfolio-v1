@@ -81,13 +81,13 @@ export const MY_SKILLS = [
   {
     skill: "Accessibility",
     classColor: "accessibility-color",
-    link: "https://www.w3.org/WAI/fundamentals",
+    link: "https://www.w3.org/WAI/fundamentals/accessibility-intro",
     id: 10,
   },
   {
     skill: "PWA",
     classColor: "pwa-color",
-    link: "https://web.dev/progressive-web-apps",
+    link: "https://web.dev/articles/what-are-pwas",
     id: 11,
   },
   {
