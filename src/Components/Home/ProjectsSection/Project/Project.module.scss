@@ -7,13 +7,13 @@
 }
 
 @media (max-width: 75em) {
-  .projects__list-item {
+  .project {
     grid-template-columns: 60%;
   }
 }
 
 @media (max-width: 56.25em) {
-  .projects__list-item {
+  .project {
     grid-template-columns: 100%;
   }
 }
@@ -43,7 +43,7 @@
 
 @media (max-width: 37.5em) {
   .project>h3 {
-    margin: 5rem 0 2.5rem 0;
+    margin: 2rem 0 0 0;
   }
 }
 
@@ -73,4 +73,12 @@
   width: fit-content;
   display: flex;
   gap: 24px;
+}
+
+@include very-small {
+  .project .buttons {
+    width: 100%;
+    flex-direction: column;
+    gap: 0;
+  }
 }

@@ -3,7 +3,7 @@ import ColoredButton from "../../../Shared/Buttons/ColoredButton/ColoredButton";
 import s from "./Project.module.scss";
 
 const Project = ({ img, name, description, liveLink, codeLink, index = 0 }) => {
-  const rightClass = index % 2 === 0 ? s.right : "";
+  const rightClass = index % 2 === 1 ? s.right : "";
 
   return (
     <div className={`${s.project} ${rightClass}`}>

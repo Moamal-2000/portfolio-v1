@@ -1,4 +1,4 @@
-import { MY_PROJECTS } from "../../../Data/variables";
+import { MY_PROJECTS } from "src/Data/variables";
 import SectionTitle from "../../Shared/SmallComponents/SectionTitle/SectionTitle";
 import Project from "./Project/Project";
 import s from "./ProjectsSection.module.scss";
