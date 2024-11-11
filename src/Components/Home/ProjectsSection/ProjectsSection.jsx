@@ -1,3 +1,4 @@
+import { MY_PROJECTS } from "../../../Data/variables";
 import SectionTitle from "../../Shared/SmallComponents/SectionTitle/SectionTitle";
 import Project from "./Project/Project";
 import s from "./ProjectsSection.module.scss";
@@ -11,7 +12,19 @@ const ProjectsSection = () => {
       />
 
       <div className={s.projects}>
-        <Project />
+        {MY_PROJECTS.map(
+          ({ img, name, description, liveLink, codeLink }, index) => (
+            <Project
+              key={name}
+              img={img}
+              name={name}
+              description={description}
+              liveLink={liveLink}
+              codeLink={codeLink}
+              index={index}
+            />
+          )
+        )}
       </div>
     </section>
   );

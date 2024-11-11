@@ -2,31 +2,26 @@ import { mockImg } from "src/Assets/images";
 import ColoredButton from "../../../Shared/Buttons/ColoredButton/ColoredButton";
 import s from "./Project.module.scss";
 
-const Project = () => {
+const Project = ({ img, name, description, liveLink, codeLink, index = 0 }) => {
+  const rightClass = index % 2 === 0 ? s.right : "";
+
   return (
-    <div className={s.project}>
+    <div className={`${s.project} ${rightClass}`}>
       <div className={s.projectView}>
-        <img src={mockImg} alt="" />
+        <img src={img || mockImg} alt="" />
       </div>
 
-      <h3>Project Name</h3>
+      <h3>{name}</h3>
 
       <p className={s.description}>
-        <span>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error,
-          aliquid! Itaque corrupti magnam fugiat mollitia labore magni saepe
-          veritatis voluptatum alias fugit. Explicabo ducimus
-        </span>
-
-        <span>
-          sapiente aut corporis odio repellendus? Lorem ipsum dolor sit amet,
-          consectetur adipisicing elit
-        </span>
+        {description.map((text, index) => (
+          <span key={index}>{text}</span>
+        ))}
       </p>
 
       <div className={s.buttons}>
-        <ColoredButton href="#" text="Live Link" />
-        <ColoredButton href="#" text="Code Link" styleType="secondary" />
+        <ColoredButton href={liveLink} text="Live Link" />
+        <ColoredButton href={codeLink} text="Code Link" styleType="secondary" />
       </div>
     </div>
   );

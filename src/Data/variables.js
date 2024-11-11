@@ -190,3 +190,62 @@ export const SKILLS_SHOWCASE = [
     id: 8,
   },
 ];
+
+export const MY_PROJECTS = [
+  {
+    name: "project 1",
+    imgSrc: "",
+    description: [
+      `Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+      Quos, quia! Voluptatum, enim magni eaque veniam eligendi at,
+      minus quos soluta quibusdam asperiores, voluptatem beatae.`,
+      `Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+      Expedita cum fugiat assumenda quisquam totam.`,
+    ],
+    liveLink: "",
+    repoLink: "",
+    id: 0,
+  },
+  {
+    name: "project 2",
+    imgSrc: "",
+    description: [
+      `Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+      Quos, quia! Voluptatum, enim magni eaque veniam eligendi at,
+      minus quos soluta quibusdam asperiores, voluptatem beatae.`,
+      `Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+      Expedita cum fugiat assumenda quisquam totam.`,
+    ],
+    liveLink: "",
+    repoLink: "",
+    id: 1,
+  },
+  {
+    name: "project 3",
+    imgSrc: "",
+    description: [
+      `Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+      Quos, quia! Voluptatum, enim magni eaque veniam eligendi at,
+      minus quos soluta quibusdam asperiores, voluptatem beatae.`,
+      `Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+      Expedita cum fugiat assumenda quisquam totam.`,
+    ],
+    liveLink: "",
+    repoLink: "",
+    id: 2,
+  },
+  {
+    name: "project 4",
+    imgSrc: "",
+    description: [
+      `Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+      Quos, quia! Voluptatum, enim magni eaque veniam eligendi at,
+      minus quos soluta quibusdam asperiores, voluptatem beatae.`,
+      `Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+      Expedita cum fugiat assumenda quisquam totam.`,
+    ],
+    liveLink: "",
+    repoLink: "",
+    id: 3,
+  },
+];
