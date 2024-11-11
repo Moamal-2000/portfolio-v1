@@ -93,3 +93,25 @@
 .skillsList li:hover img {
   filter: grayscale(0);
 }
+
+.skillsList li:nth-child(1) img,
+.skillsList li:nth-child(2) img,
+.skillsList li:nth-child(3) img {
+  width: 64px;
+  height: 64px;
+}
+
+.skillsList li:nth-child(4) img {
+  width: 48px;
+  height: 48px;
+}
+
+.skillsList li:nth-child(5) img {
+  width: 72px;
+  height: 72px;
+}
+
+.skillsList li:nth-child(9) img {
+  width: 55px;
+  height: 55px;
+}
