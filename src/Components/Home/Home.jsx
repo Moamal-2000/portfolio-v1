@@ -1,5 +1,6 @@
 import ThemeChanger from "../Shared/SmallComponents/ThemeChange/ThemeChanger";
 import AboutSection from "./AboutSection/AboutSection";
+import ContactSection from "./ContactSection/ContactSection";
 import HeroSection from "./HeroSection/HeroSection";
 import s from "./Home.module.scss";
 import ProjectsSection from "./ProjectsSection/ProjectsSection";
@@ -19,6 +20,7 @@ const Home = () => {
         <ProjectsSection />
       </div>
 
+      <ContactSection />
       <ThemeChanger />
     </main>
   );
