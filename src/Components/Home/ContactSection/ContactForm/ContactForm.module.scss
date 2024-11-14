@@ -2,7 +2,6 @@
 
 .contactForm {
   background: #fff;
-  display: flex;
   margin-top: 100px;
   border-radius: 5px;
   overflow: hidden;
@@ -11,14 +10,26 @@
   box-shadow: 0 10px 100px rgba(0, 0, 0, .1);
 }
 
+@media (max-width: 1300px) {
+  .contactForm {
+    grid-template-columns: 1fr;
+  }
+}
+
 .form {
   padding: 5rem;
   flex: 1;
 }
 
-@media (max-width: 37.5em) {
+@include small {
   .form {
     padding: 3rem;
+  }
+}
+
+@include very-small {
+  .form {
+    padding: 2rem;
   }
 }
 
@@ -80,6 +91,12 @@
   z-index: 1;
 }
 
+@media (max-width: 1300px) {
+  .imgHolder {
+    display: none;
+  }
+}
+
 @media (max-width: 37.5em) {
   .imgHolder {
     display: none;
@@ -95,4 +112,8 @@
   height: 100%;
   top: 0;
   left: 0;
+}
+
+.imgHolder img {
+  object-position: 0 -210px;
 }
