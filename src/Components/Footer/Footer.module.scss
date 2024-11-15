@@ -40,33 +40,3 @@
     display: block;
   }
 }
-
-.nav .socialMedia {
-  display: flex;
-  gap: 4px;
-  width: fit-content;
-  margin: 60px auto 0;
-}
-
-.nav .socialMedia li a {
-  outline: 0;
-  display: block;
-  width: 50px;
-  height: 50px;
-  font-size: 24px;
-  line-height: 50px;
-  color: rgba(255, 255, 255, .8);
-  background: #333;
-  @include center-x-y;
-  transition: background-color .3s ease-in-out;
-}
-
-.nav .socialMedia li a :where(svg, img) {
-  width: 22px;
-  height: 22px;
-}
-
-.nav .socialMedia li a svg {
-  fill: #fff;
-  transition: fill .3s;
-}
