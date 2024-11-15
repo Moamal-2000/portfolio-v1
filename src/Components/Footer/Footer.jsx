@@ -19,7 +19,7 @@ const Footer = () => {
         <ul className={s.socialMedia}>
           {MY_SOCIAL_MEDIA.map(({ name, link, id }) => (
             <li key={id}>
-              <a href={link}>
+              <a href={link} className={name}>
                 <SvgIcon name={name} />
               </a>
             </li>

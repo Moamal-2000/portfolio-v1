@@ -58,7 +58,7 @@
   color: rgba(255, 255, 255, .8);
   background: #333;
   @include center-x-y;
-  transition: all .3s;
+  transition: background-color .3s;
 }
 
 .nav .socialMedia li a :where(svg, img) {
