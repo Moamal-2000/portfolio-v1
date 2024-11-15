@@ -253,32 +253,32 @@ export const MY_PROJECTS = [
 export const MY_SOCIAL_MEDIA = [
   {
     name: "facebook",
-    link: "",
+    link: "https://www.facebook.com/MoamalAlaa109",
     id: 0,
   },
   {
     name: "linkedin",
-    link: "",
+    link: "https://www.linkedin.com/in/moamal-alaa",
     id: 1,
   },
   {
     name: "github",
-    link: "",
+    link: "https://github.com/Moamal-2000",
     id: 2,
   },
   {
     name: "discord",
-    link: "",
+    link: "https://discord.gg/fHkTM6mx",
     id: 3,
   },
   {
     name: "twitter",
-    link: "",
+    link: "https://x.com/MoamalAlaa7",
     id: 4,
   },
   {
     name: "codepen",
-    link: "",
+    link: "https://codepen.io/moamal-2000",
     id: 5,
   },
 ];
