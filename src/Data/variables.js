@@ -249,3 +249,36 @@ export const MY_PROJECTS = [
     id: 3,
   },
 ];
+
+export const MY_SOCIAL_MEDIA = [
+  {
+    name: "facebook",
+    link: "",
+    id: 0,
+  },
+  {
+    name: "linkedin",
+    link: "",
+    id: 1,
+  },
+  {
+    name: "github",
+    link: "",
+    id: 2,
+  },
+  {
+    name: "discord",
+    link: "",
+    id: 3,
+  },
+  {
+    name: "twitter",
+    link: "",
+    id: 4,
+  },
+  {
+    name: "codepen",
+    link: "",
+    id: 5,
+  },
+];

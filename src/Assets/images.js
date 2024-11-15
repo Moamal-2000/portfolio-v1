@@ -1,3 +1,4 @@
+import codewarsLogo from "../Assets/codewars-icon.webp";
 import colorPicker from "../Assets/color-picker.png";
 import contactFormBg from "../Assets/contact-form-bg.jpg";
 import cssLogo from "../Assets/css-logo.png";
@@ -16,6 +17,7 @@ import userPlaceHolderImg from "../Assets/user-picture-placeholder.webp";
 import vsCodeLogo from "../Assets/vscode-logo.svg";
 
 export {
+  codewarsLogo,
   colorPicker,
   contactFormBg,
   cssLogo,
