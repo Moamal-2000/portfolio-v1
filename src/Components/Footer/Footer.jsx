@@ -26,8 +26,8 @@ const Footer = () => {
           ))}
 
           <li>
-            <a href="#">
-              <img src={codewarsLogo} className={s.codewars} alt="" />
+            <a href="#" className="codewars">
+              <img src={codewarsLogo} alt="" />
             </a>
           </li>
         </ul>

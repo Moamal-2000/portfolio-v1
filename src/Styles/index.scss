@@ -96,3 +96,19 @@ main {
     }
   }
 }
+
+@each $media, $color in $social-media-color {
+  .#{$media}:hover {
+    background-color: #{$color} !important;
+
+    @if $media=="github" or $media=="codepen" {
+      & svg {
+        fill: #000 !important;
+      }
+    }
+  }
+}
+
+.codewars img {
+  filter: brightness(0) invert(1);
+}

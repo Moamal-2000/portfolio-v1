@@ -58,7 +58,7 @@
   color: rgba(255, 255, 255, .8);
   background: #333;
   @include center-x-y;
-  transition: background-color .3s;
+  transition: background-color .3s ease-in-out;
 }
 
 .nav .socialMedia li a :where(svg, img) {
@@ -68,8 +68,5 @@
 
 .nav .socialMedia li a svg {
   fill: #fff;
-}
-
-.nav .socialMedia li a .codewars {
-  filter: brightness(0) invert(1);
+  transition: fill .3s;
 }
