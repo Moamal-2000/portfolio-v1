@@ -1,13 +1,24 @@
+import emailjs from "@emailjs/browser";
+import { useRef } from "react";
 import { contactFormBg } from "src/Assets/images";
 import s from "./ContactForm.module.scss";
 
 const ContactForm = () => {
+  const formRef = useRef();
+
   function handleSubmit(event) {
     event.preventDefault();
+    sendMessage();
+  }
+
+  function sendMessage() {
+    emailjs.sendForm("service_ro1lghg", "template_m25p1w3", formRef.current, {
+      publicKey: "SyWSSmy9K9xVdF89p",
+    });
   }
 
   return (
-    <form className={s.contactForm} onSubmit={handleSubmit}>
+    <form className={s.contactForm} ref={formRef} onSubmit={handleSubmit}>
       <div className={s.form}>
         <div className={s.input}>
           <label htmlFor="name">Name</label>
