@@ -1,5 +1,5 @@
 import userPlaceHolderImg from "src/Assets/user-picture-placeholder.webp";
-import { NAV_LINKS } from "src/Data/variables";
+import { NAV_LINKS } from "src/Data/staticData";
 import s from "./Header.module.scss";
 import MobileMenu from "./MobileMenu/MobileMenu";
 

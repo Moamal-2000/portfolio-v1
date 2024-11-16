@@ -1,5 +1,5 @@
 import { codewarsLogo } from "src/Assets/images";
-import { MY_SOCIAL_MEDIA } from "src/Data/variables";
+import { MY_SOCIAL_MEDIA } from "src/Data/staticData";
 import SvgIcon from "../../Shared/SmallComponents/SvgIcon";
 import s from "./SocialMedia.module.scss";
 

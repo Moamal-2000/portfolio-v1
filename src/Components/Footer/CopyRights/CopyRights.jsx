@@ -1,4 +1,5 @@
-import { DESIGNER_LINKEDIN, MY_SOCIAL_MEDIA } from "src/Data/variables";
+import { MY_SOCIAL_MEDIA } from "src/Data/staticData";
+import { DESIGNER_LINKEDIN } from "src/Data/variables";
 import s from "./CopyRights.module.scss";
 
 const CopyRights = () => {

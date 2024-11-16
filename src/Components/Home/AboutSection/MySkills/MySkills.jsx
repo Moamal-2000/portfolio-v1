@@ -1,4 +1,4 @@
-import { MY_SKILLS } from "src/Data/variables";
+import { MY_SKILLS } from "src/Data/staticData";
 import s from "./MySkills.module.scss";
 
 const MySkills = () => {

@@ -1,4 +1,4 @@
-import { NAV_LINKS } from "src/Data/variables";
+import { NAV_LINKS } from "src/Data/staticData";
 import s from "./Footer.module.scss";
 import SocialMedia from "./SocialMedia/SocialMedia";
 import CopyRights from "./CopyRights/CopyRights";

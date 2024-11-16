@@ -1,4 +1,4 @@
-import { SKILLS_SHOWCASE } from "src/Data/variables";
+import { SKILLS_SHOWCASE } from "src/Data/staticData";
 import s from "./SkillsShowcase.module.scss";
 
 const SkillsShowcase = () => {

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { NAV_LINKS } from "src/Data/variables";
+import { NAV_LINKS } from "src/Data/staticData";
 import s from "./MobileMenu.module.scss";
 
 const MobileMenu = () => {
