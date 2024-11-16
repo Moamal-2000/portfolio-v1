@@ -10,6 +10,7 @@ import {
   vsCodeLogo,
 } from "../Assets/images";
 
+export const DESIGNER_LINKEDIN = "https://www.linkedin.com/in/rammcodes";
 export const NAV_LINKS = [
   { name: "Home", link: "#home" },
   { name: "About", link: "#about" },
