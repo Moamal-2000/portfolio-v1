@@ -20,8 +20,13 @@ const Project = ({ img, name, description, liveLink, codeLink, index = 0 }) => {
       </p>
 
       <div className={s.buttons}>
-        <ColoredButton href={liveLink} text="Live Link" />
-        <ColoredButton href={codeLink} text="Code Link" styleType="secondary" />
+        <ColoredButton href={liveLink} text="Live Link" target="_blank" />
+        <ColoredButton
+          href={codeLink}
+          text="Code Link"
+          target="_blank"
+          styleType="secondary"
+        />
       </div>
     </div>
   );
