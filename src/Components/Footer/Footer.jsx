@@ -16,7 +16,6 @@ const Footer = () => {
         </ul>
 
         <SocialMedia />
-
         <CopyRights />
       </nav>
     </footer>

@@ -4,7 +4,7 @@ import s from "./HeroSection.module.scss";
 
 const HeroSection = () => {
   return (
-    <section id="home-hero" className={s.heroSection}>
+    <section id="home" className={s.heroSection}>
       <div className={s.content}>
         <SectionTitle
           name="Hello 👋"

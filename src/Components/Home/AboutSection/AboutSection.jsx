@@ -5,7 +5,7 @@ import MyStory from "./MyStory/MyStory";
 
 const AboutSection = () => {
   return (
-    <section className={s.aboutSection}>
+    <section className={s.aboutSection} id="about">
       <div className="container" data-container>
         <SectionTitle
           name="About 🦄"
