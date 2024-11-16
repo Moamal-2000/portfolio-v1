@@ -1,0 +1,26 @@
+@import "src/Styles/mixins.scss";
+
+.copyrights {
+  width: 291px;
+  margin: 50px auto 0;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.copyrights::before {
+  content: '©';
+  font-size: 2rem;
+  font-weight: light;
+  padding-right: 2px;
+  user-select: all;
+}
+
+.copyrights a {
+  color: #c9c9c9;
+  text-decoration: underline;
+  transition: color .3s;
+
+  &:hover {
+    color: #fff;
+  }
+}

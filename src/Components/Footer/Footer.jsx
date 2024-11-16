@@ -1,6 +1,7 @@
 import { NAV_LINKS } from "src/Data/variables";
 import s from "./Footer.module.scss";
 import SocialMedia from "./SocialMedia/SocialMedia";
+import CopyRights from "./CopyRights/CopyRights";
 
 const Footer = () => {
   return (
@@ -16,24 +17,7 @@ const Footer = () => {
 
         <SocialMedia />
 
-        <p className={s.copyrights}>
-          Website designed by{" "}
-          <a
-            href="https://www.linkedin.com/in/rammcodes"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Ram Maheshwari
-          </a>
-          &nbsp; And Developed by{" "}
-          <a
-            href="https://www.linkedin.com/in/moamal-alaa"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Moamal Alaa
-          </a>
-        </p>
+        <CopyRights />
       </nav>
     </footer>
   );
