@@ -13,14 +13,14 @@ const ProjectsSection = () => {
 
       <div className={s.projects}>
         {MY_PROJECTS.map(
-          ({ img, name, description, liveLink, codeLink }, index) => (
+          ({ img, name, description, liveLink, repoLink }, index) => (
             <Project
               key={name}
               img={img}
               name={name}
               description={description}
               liveLink={liveLink}
-              codeLink={codeLink}
+              repoLink={repoLink}
               index={index}
             />
           )
