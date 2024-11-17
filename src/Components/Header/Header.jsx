@@ -1,5 +1,6 @@
 import userPlaceHolderImg from "src/Assets/user-picture-placeholder.webp";
 import { NAV_LINKS } from "src/Data/staticData";
+import { MY_NAME } from "src/Data/variables";
 import s from "./Header.module.scss";
 import MobileMenu from "./MobileMenu/MobileMenu";
 
@@ -9,9 +10,9 @@ const Header = () => {
       <div className={s.wrapper}>
         <a href="/#" className={s.logoContainer}>
           <div className={s.imgHolder}>
-            <img src={userPlaceHolderImg} alt="logo Image" />
+            <img src={userPlaceHolderImg} alt={`${MY_NAME}'s face`} />
           </div>
-          <h1 className={s.logoText}>Moamal Alaa</h1>
+          <h1 className={s.logoText}>{MY_NAME}</h1>
         </a>
 
         <nav className={s.nav}>

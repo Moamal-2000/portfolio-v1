@@ -1,17 +1,17 @@
 import { MY_SOCIAL_MEDIA } from "src/Data/staticData";
-import { DESIGNER_LINKEDIN } from "src/Data/variables";
+import { AUTHOR_DATA, MY_NAME } from "src/Data/variables";
 import s from "./CopyRights.module.scss";
 
 const CopyRights = () => {
   return (
     <p className={s.copyrights}>
       Website designed by{" "}
-      <a href={DESIGNER_LINKEDIN} target="_blank" rel="noreferrer">
-        Ram Maheshwari
+      <a href={AUTHOR_DATA.linkedinAccount} target="_blank" rel="noreferrer">
+        {AUTHOR_DATA.name}
       </a>
       &nbsp; And Developed by{" "}
       <a href={MY_SOCIAL_MEDIA.linkedin} target="_blank" rel="noreferrer">
-        Moamal Alaa
+        {MY_NAME}
       </a>
     </p>
   );
