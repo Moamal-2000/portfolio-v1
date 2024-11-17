@@ -70,7 +70,13 @@ const ContactForm = () => {
       </div>
 
       <div className={s.imgHolder}>
-        <img src={contactFormBg} alt="" />
+        <img
+          src={contactFormBg}
+          alt={`Black-and-white photograph of a scenic mountainous
+            landscape with snow-covered peaks and a valley shrouded
+            in mist. Pine trees are visible in the foreground,
+            enhancing the serene and dramatic atmosphere.`}
+        />
       </div>
     </form>
   );
