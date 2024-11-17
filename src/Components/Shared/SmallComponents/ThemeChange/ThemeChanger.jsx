@@ -31,7 +31,13 @@ const ThemeChanger = () => {
         onClick={() => setIsMenuActive(true)}
         title="Theme picker"
       >
-        <img src={colorPicker} alt="theme color tester" />
+        <img
+          src={colorPicker}
+          alt={`A colorful circular icon resembling a color wheel,
+            divided into eight equally sized segments, each in a different
+            vibrant shade ranging from red, orange, yellow, green,
+            blue, to purple, representing a spectrum of colors.`}
+        />
       </button>
 
       <div className={`${s.menu} ${activeClass}`}>
@@ -42,7 +48,13 @@ const ThemeChanger = () => {
             value={themeColor}
             onChange={(e) => handleChangeColor(e, "themeColor")}
           />
-          <img src={themeIcon} alt="theme color picker" />
+          <img
+            src={themeIcon}
+            alt={`A flat design icon featuring four small, colorful circles
+              arranged in a diamond shape on a dark gray circular background.
+              The circles are blue, red, yellow, and green, evenly
+              spaced to form a simple and modern visual theme`}
+          />
         </button>
 
         <button type="button" className={s.item} title="Text color">
