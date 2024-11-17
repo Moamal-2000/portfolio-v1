@@ -193,7 +193,7 @@ export const SKILLS_SHOWCASE = [
 
 export const MY_PROJECTS = [
   {
-    name: "project 1",
+    name: "E-Commerce",
     imgSrc: "",
     description: [
       `Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -202,12 +202,12 @@ export const MY_PROJECTS = [
       `Lorem ipsum dolor sit amet consectetur, adipisicing elit.
       Expedita cum fugiat assumenda quisquam totam.`,
     ],
-    liveLink: "",
-    repoLink: "",
+    liveLink: "https://e-commercew.netlify.app",
+    repoLink: "https://github.com/Moamal-2000/e-commerce",
     id: 0,
   },
   {
-    name: "project 2",
+    name: "Custom-Hooks",
     imgSrc: "",
     description: [
       `Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -216,12 +216,12 @@ export const MY_PROJECTS = [
       `Lorem ipsum dolor sit amet consectetur, adipisicing elit.
       Expedita cum fugiat assumenda quisquam totam.`,
     ],
-    liveLink: "",
-    repoLink: "",
+    liveLink: "https://hooks-time.netlify.app",
+    repoLink: "https://github.com/Moamal-2000/custom-hooks",
     id: 1,
   },
   {
-    name: "project 3",
+    name: "Aster-Information",
     imgSrc: "",
     description: [
       `Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -230,23 +230,9 @@ export const MY_PROJECTS = [
       `Lorem ipsum dolor sit amet consectetur, adipisicing elit.
       Expedita cum fugiat assumenda quisquam totam.`,
     ],
-    liveLink: "",
-    repoLink: "",
+    liveLink: "https://asterinformation.netlify.app",
+    repoLink: "https://github.com/Moamal-2000/aster-information",
     id: 2,
-  },
-  {
-    name: "project 4",
-    imgSrc: "",
-    description: [
-      `Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-      Quos, quia! Voluptatum, enim magni eaque veniam eligendi at,
-      minus quos soluta quibusdam asperiores, voluptatem beatae.`,
-      `Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-      Expedita cum fugiat assumenda quisquam totam.`,
-    ],
-    liveLink: "",
-    repoLink: "",
-    id: 3,
   },
 ];
 
