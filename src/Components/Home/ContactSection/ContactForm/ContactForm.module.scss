@@ -44,6 +44,8 @@
   letter-spacing: 1px;
   display: block;
   margin-bottom: 1rem;
+  width: fit-content;
+  cursor: pointer;
 }
 
 .form .input :where(input, textarea) {

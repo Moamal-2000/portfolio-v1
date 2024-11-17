@@ -35,28 +35,31 @@ const ContactForm = () => {
             placeholder="Enter Your Name"
             type="text"
             value={name}
+            id="name"
             onChange={(e) => setName(e.target.value)}
           />
         </div>
 
         <div className={s.input}>
-          <label htmlFor="name">Email</label>
+          <label htmlFor="email">Email</label>
           <input
             placeholder="Enter Your Email"
-            type="text"
+            type="email"
             value={email}
+            id="email"
             onChange={(e) => setEmail(e.target.value)}
           />
         </div>
 
         <div className={s.input}>
-          <label htmlFor="name">Message</label>
+          <label htmlFor="message">Message</label>
           <textarea
             placeholder="Enter Your Message"
             name="message"
             cols="30"
             rows="10"
             value={message}
+            id="message"
             onChange={(e) => setMessage(e.target.value)}
           ></textarea>
         </div>
