@@ -11,18 +11,16 @@ const ContactForm = () => {
 
   function handleSubmit(event) {
     event.preventDefault();
-    sendMessage();
+    handleSendMessage();
   }
 
-  async function sendMessage() {
+  async function handleSendMessage() {
     try {
-      emailjs.sendForm("service_ro1lghg", "template_m25p1w3", formRef.current, {
-        publicKey: "SyWSSmy9K9xVdF89p",
-      });
-
+      sendEmailJsMessage(formRef.current);
       setName("");
       setEmail("");
       setMessage("");
+      console.log("Message sent successfully");
     } catch (error) {
       console.log(error);
     }
@@ -75,3 +73,12 @@ const ContactForm = () => {
   );
 };
 export default ContactForm;
+
+export function sendEmailJsMessage(formElement) {
+  const { VITE_SERVICE_ID, VITE_TEMPLATE_ID, VITE_PUBLIC_KEY } = import.meta
+    .env;
+
+  emailjs.sendForm(VITE_SERVICE_ID, VITE_TEMPLATE_ID, formElement, {
+    publicKey: VITE_PUBLIC_KEY,
+  });
+}
