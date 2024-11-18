@@ -1,0 +1,25 @@
+@import "src/Styles/mixins.scss";
+
+.nav ul {
+  display: flex;
+  align-items: center;
+}
+
+.nav ul li {
+  padding: 1.3rem 2rem;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+
+@media (max-width: 900px) {
+  .nav ul li {
+    padding: 1.3rem 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .nav ul {
+    display: none;
+  }
+}
