@@ -12,6 +12,10 @@
   font-weight: 400;
 }
 
+.nav ul li.active {
+  background-color: red;
+}
+
 @media (max-width: 900px) {
   .nav ul li {
     padding: 1.3rem 1.5rem;

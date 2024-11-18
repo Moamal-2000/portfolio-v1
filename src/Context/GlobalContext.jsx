@@ -3,7 +3,7 @@ import { createContext, useContext, useState } from "react";
 const GlobalContext = createContext();
 
 const GlobalContextProvider = ({ children }) => {
-  const [activeSection, setActiveSection] = useState("about");
+  const [activeSection, setActiveSection] = useState("Home");
 
   const value = {
     activeSection,
