@@ -2,9 +2,9 @@ import { useEffect } from "react";
 import { useGlobalContext } from "src/Context/GlobalContext";
 import useOnScreen from "../Helper/useOnScreen";
 
-const useSetActiveOnVisible = (elementRef, sectionName) => {
+const useSetActiveOnVisible = (elementRef, sectionName, options) => {
   const { setActiveSection } = useGlobalContext();
-  const isVisible = useOnScreen(elementRef, { rootMargin: "0px" });
+  const isVisible = useOnScreen(elementRef, options);
 
   useEffect(() => {
     if (isVisible) setActiveSection(sectionName);
