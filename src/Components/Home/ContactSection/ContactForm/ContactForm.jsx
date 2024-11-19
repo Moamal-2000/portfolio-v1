@@ -61,7 +61,7 @@ const ContactForm = () => {
             value={message}
             id="message"
             onChange={(e) => setMessage(e.target.value)}
-          ></textarea>
+          />
         </div>
 
         <button type="submit" className={s.submitButton}>
@@ -76,6 +76,7 @@ const ContactForm = () => {
             landscape with snow-covered peaks and a valley shrouded
             in mist. Pine trees are visible in the foreground,
             enhancing the serene and dramatic atmosphere.`}
+          loading="lazy"
         />
       </div>
     </form>

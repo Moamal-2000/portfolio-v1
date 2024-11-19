@@ -8,7 +8,7 @@ const Project = ({ img, name, description, liveLink, repoLink, index = 0 }) => {
   return (
     <div className={`${s.project} ${rightClass}`}>
       <div className={s.projectView}>
-        <img src={img || mockImg} alt="" />
+        <img src={img || mockImg} alt="" loading="lazy" />
       </div>
 
       <h3>{name}</h3>

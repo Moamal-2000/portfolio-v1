@@ -27,7 +27,7 @@ const SocialMedia = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src={codewarsLogo} alt="codewars logo" />
+          <img src={codewarsLogo} alt="codewars logo" loading="lazy" />
         </a>
       </li>
     </ul>

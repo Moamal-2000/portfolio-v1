@@ -8,7 +8,7 @@ const SkillsShowcase = () => {
         {SKILLS_SHOWCASE.map(({ skill, imgSrc, link, id }) => (
           <li key={id}>
             <a href={link} target="_blank" rel="noopener noreferrer">
-              <img src={imgSrc} alt={skill} />
+              <img src={imgSrc} alt={skill} loading="lazy" />
             </a>
           </li>
         ))}
