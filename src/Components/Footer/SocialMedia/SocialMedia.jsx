@@ -13,6 +13,7 @@ const SocialMedia = () => {
             className={name}
             target="_blank"
             rel="noopener noreferrer"
+            aria-label={name}
           >
             <SvgIcon name={name} />
           </a>
@@ -26,7 +27,7 @@ const SocialMedia = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src={codewarsLogo} alt="" />
+          <img src={codewarsLogo} alt="codewars logo" />
         </a>
       </li>
     </ul>

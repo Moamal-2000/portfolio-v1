@@ -16,7 +16,7 @@ const MobileMenu = () => {
         type="button"
         className={s.navButton}
         onClick={updateMobileMenuState}
-        aria-label="Mobile Menu button"
+        aria-label="Open Menu button"
       />
 
       <div className={`${s.mobileMenu} ${activeClass}`}>
@@ -24,6 +24,7 @@ const MobileMenu = () => {
           type="button"
           className={s.close}
           onClick={() => updateMobileMenuState(false)}
+          aria-label="Close mobile menu"
         />
 
         <ul className={`${s.menuLinks} ${activeClass}`}>
