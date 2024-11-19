@@ -65,7 +65,12 @@ const ThemeChanger = () => {
             value={textColor}
             onChange={(e) => handleChangeColor(e, "textColor")}
           />
-          <img src={textIcon} alt="text color picker" />
+          <img
+            src={textIcon}
+            alt={`Circular icon with the letter A in the center,
+            designed in gradient shades of pink and orange,
+            surrounded by a bold circular outline`}
+          />
         </button>
 
         <button
@@ -74,7 +79,11 @@ const ThemeChanger = () => {
           onClick={setDefaultTheme}
           title="Default theme"
         >
-          <img src={gearIcon} alt="gear icon representing default theme" />
+          <img
+            src={gearIcon}
+            alt={`Gear icon with circular arrows
+            representing settings or updates`}
+          />
         </button>
 
         <button
