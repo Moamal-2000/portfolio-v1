@@ -16,11 +16,18 @@ const Project = ({
 
   return (
     <div className={`${s.project} ${rightClass}`}>
-      <div className={s.projectView}>
+      <a
+        href={liveLink}
+        className={s.projectView}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <img src={img || mockImg} alt={alt || mockImgAlt} loading="lazy" />
-      </div>
+      </a>
 
-      <h3>{name}</h3>
+      <a href={liveLink} target="_blank" rel="noopener noreferrer">
+        {name}
+      </a>
 
       <p className={s.description}>
         {description.map((text, index) => (

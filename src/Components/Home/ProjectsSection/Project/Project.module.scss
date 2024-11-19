@@ -32,17 +32,18 @@
   display: block;
 }
 
-.project>h3 {
+.project>a {
   font-size: 3.4rem;
   letter-spacing: 1px;
   line-height: 1.3;
   color: #000;
   font-weight: 400;
   margin-top: 1rem;
+  width: fit-content;
 }
 
 @media (max-width: 37.5em) {
-  .project>h3 {
+  .project>a {
     margin: 2rem 0 0 0;
   }
 }
