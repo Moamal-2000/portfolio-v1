@@ -56,7 +56,7 @@
 
   &:hover,
   &:has(input:focus) {
-    background-color: rgba(var(--themeColor), .05);
+    background-color: rgba(var(--theme-color), .05);
   }
 }
 
@@ -83,7 +83,7 @@
   width: 100%;
   cursor: pointer;
   text-align: left;
-  color: rgba(var(--textColor));
+  color: rgba(var(--text-color));
 }
 
 .menu .item:first-child {

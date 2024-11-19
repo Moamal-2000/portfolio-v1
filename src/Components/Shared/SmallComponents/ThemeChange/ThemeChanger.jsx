@@ -12,16 +12,16 @@ const ThemeChanger = () => {
   const activeClass = isMenuActive ? s.active : "";
 
   function setDefaultTheme() {
-    setThemeColor("24, 112, 167", "themeColor");
-    setThemeColor("#000000", "textColor");
+    setThemeColor("24, 112, 167", "theme-color");
+    setThemeColor("#000000", "text-color");
   }
 
   useEffect(() => {
-    const themeColorLocal = useLocalStorage("themeColor");
-    const textColorLocal = useLocalStorage("textColor");
+    const themeColorLocal = useLocalStorage("theme-color");
+    const textColorLocal = useLocalStorage("text-color");
 
-    if (themeColorLocal) setThemeColor(themeColorLocal, "themeColor");
-    if (textColorLocal) setThemeColor(textColorLocal, "textColor");
+    if (themeColorLocal) setThemeColor(themeColorLocal, "theme-color");
+    if (textColorLocal) setThemeColor(textColorLocal, "text-color");
   }, []);
 
   return (
@@ -47,7 +47,7 @@ const ThemeChanger = () => {
             placeholder="Color Selector"
             type="color"
             value={themeColor}
-            onChange={(e) => handleChangeColor(e, "themeColor")}
+            onChange={(e) => handleChangeColor(e, "theme-color")}
           />
           <img
             src={themeIcon}
@@ -63,7 +63,7 @@ const ThemeChanger = () => {
             placeholder="Color Selector"
             type="color"
             value={textColor}
-            onChange={(e) => handleChangeColor(e, "textColor")}
+            onChange={(e) => handleChangeColor(e, "text-color")}
           />
           <img
             src={textIcon}

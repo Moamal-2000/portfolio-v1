@@ -2,8 +2,8 @@
 
 .button {
   color: #fff;
-  background: rgba(var(--themeColor), 1);
-  border: 2px solid rgba(var(--themeColor), 1);
+  background: rgba(var(--theme-color), 1);
+  border: 2px solid rgba(var(--theme-color), 1);
   letter-spacing: 1px;
   font-weight: 700;
   cursor: pointer;
@@ -26,6 +26,6 @@
 
 .button.secondary {
   background-color: transparent;
-  color: rgba(var(--themeColor), 1);
-  border-color: rgba(var(--themeColor), 1);
+  color: rgba(var(--theme-color), 1);
+  border-color: rgba(var(--theme-color), 1);
 }
