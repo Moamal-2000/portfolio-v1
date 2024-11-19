@@ -21,7 +21,7 @@
   margin: 0 auto;
 }
 
-@media (max-width: 600px) {
+@include small {
   .main-header {
     padding: 2.3rem 1.5rem;
   }
@@ -42,7 +42,7 @@
   background: rgba(var(--theme-color), 1);
 }
 
-@media (max-width: 600px) {
+@include small {
   .imgHolder {
     margin-right: 1rem;
   }

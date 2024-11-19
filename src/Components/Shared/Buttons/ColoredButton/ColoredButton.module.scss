@@ -14,7 +14,7 @@
   text-wrap: nowrap;
 }
 
-@media (max-width: 600px) {
+@include small {
   .button {
     display: block;
     text-align: center;

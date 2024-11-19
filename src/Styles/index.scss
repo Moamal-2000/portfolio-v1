@@ -27,7 +27,7 @@ html {
   }
 }
 
-@media (max-width: 600px) {
+@include small {
   html {
     font-size: 56%;
   }
