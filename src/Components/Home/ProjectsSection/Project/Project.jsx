@@ -1,14 +1,23 @@
 import { mockImg } from "src/Assets/images";
+import { mockImgAlt } from "src/Data/variables";
 import ColoredButton from "../../../Shared/Buttons/ColoredButton/ColoredButton";
 import s from "./Project.module.scss";
 
-const Project = ({ img, name, description, liveLink, repoLink, index = 0 }) => {
+const Project = ({
+  img,
+  name,
+  description,
+  liveLink,
+  repoLink,
+  index = 0,
+  alt,
+}) => {
   const rightClass = index % 2 === 1 ? s.right : "";
 
   return (
     <div className={`${s.project} ${rightClass}`}>
       <div className={s.projectView}>
-        <img src={img || mockImg} alt="" loading="lazy" />
+        <img src={img || mockImg} alt={alt || mockImgAlt} loading="lazy" />
       </div>
 
       <h3>{name}</h3>
