@@ -6,13 +6,13 @@ import SvgIcon from "../SvgIcon";
 import s from "./ThemeChanger.module.scss";
 
 const ThemeChanger = () => {
-  const [themeColor] = useState("#1DA1F2");
+  const [themeColor] = useState("#1870a7");
   const [textColor] = useState("#000000");
   const [isMenuActive, setIsMenuActive] = useState(false);
   const activeClass = isMenuActive ? s.active : "";
 
   function setDefaultTheme() {
-    setThemeColor("29, 161, 242", "themeColor");
+    setThemeColor("24, 112, 167", "themeColor");
     setThemeColor("#000000", "textColor");
   }
 
