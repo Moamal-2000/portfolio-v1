@@ -6,13 +6,13 @@
   grid-gap: 3rem;
 }
 
-@media (max-width: 75em) {
+@include large {
   .project {
     grid-template-columns: 60%;
   }
 }
 
-@media (max-width: 56.25em) {
+@include medium {
   .project {
     grid-template-columns: 100%;
   }
@@ -42,7 +42,7 @@
   width: fit-content;
 }
 
-@media (max-width: 37.5em) {
+@include small {
   .project>a {
     margin: 2rem 0 0 0;
   }
@@ -55,7 +55,7 @@
   margin-bottom: 2rem;
 }
 
-@media (max-width: 37.5em) {
+@include small {
   .project .description {
     margin-bottom: 3.7rem;
   }

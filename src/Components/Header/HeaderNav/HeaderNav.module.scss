@@ -26,7 +26,7 @@
   }
 }
 
-@media (max-width: 900px) {
+@include medium {
   .nav ul li a {
     padding: 1.3rem 1.5rem;
   }

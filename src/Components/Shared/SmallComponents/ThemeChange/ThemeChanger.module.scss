@@ -17,7 +17,7 @@
   height: 48px;
 }
 
-@media (max-width: 37.5em) {
+@include small {
   .themeSelector {
     top: 100%;
     translate: 0 -100%;

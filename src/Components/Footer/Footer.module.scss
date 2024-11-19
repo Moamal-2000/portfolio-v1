@@ -9,7 +9,7 @@
   align-items: center;
 }
 
-@media (max-width: 37.5em) {
+@include small {
   .footer {
     padding: 7rem 0;
   }

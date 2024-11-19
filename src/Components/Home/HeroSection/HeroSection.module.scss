@@ -7,7 +7,7 @@
   max-height: 120rem;
 }
 
-@media (max-width: 37.5em) {
+@include small {
   .heroSection {
     height: unset;
     min-height: unset;
@@ -20,7 +20,7 @@
   animation: downToUp .8s;
 }
 
-@media (max-width: 37.5em) {
+@include small {
   .content {
     margin: 0 auto;
     padding: 15rem 0 10rem 0;
