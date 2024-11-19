@@ -10,7 +10,7 @@ const CopyRights = () => {
         {AUTHOR_DATA.name}
       </a>
       &nbsp; And Developed by{" "}
-      <a href={MY_SOCIAL_MEDIA.linkedin} target="_blank" rel="noreferrer">
+      <a href={MY_SOCIAL_MEDIA[1].link} target="_blank" rel="noreferrer">
         {MY_NAME}
       </a>
     </p>
