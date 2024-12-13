@@ -1,4 +1,4 @@
-@import "src/Styles/mixins.scss";
+@use "src/Styles/mixins.scss" as m;
 
 .myStory {
   margin-top: 4rem;
@@ -20,7 +20,7 @@
   margin-bottom: 5.5rem;
 }
 
-@include small {
+@include m.small {
   .myStory .description {
     font-size: 1.6rem;
   }
@@ -35,7 +35,7 @@
   }
 }
 
-@include small {
+@include m.small {
   .myStory .button {
     width: 70%;
   }

@@ -1,4 +1,4 @@
-@import "src/Styles/mixins.scss";
+@use "src/Styles/mixins.scss" as m;
 
 .footer {
   background: #141414;
@@ -9,7 +9,7 @@
   align-items: center;
 }
 
-@include small {
+@include m.small {
   .footer {
     padding: 7rem 0;
   }
@@ -28,14 +28,14 @@
   width: 374px;
 }
 
-@include small {
+@include m.small {
   .nav .navLinks {
     width: fit-content;
     flex-wrap: wrap;
   }
 }
 
-@include very-small {
+@include m.very-small {
   .nav .navLinks {
     gap: 9px;
   }
@@ -49,14 +49,14 @@
   font-weight: 500;
 }
 
-@include small {
+@include m.small {
   .nav .navLinks li a {
     display: block;
     padding: .8rem;
   }
 }
 
-@include very-small {
+@include m.very-small {
   .nav .navLinks li a {
     padding: 0;
   }

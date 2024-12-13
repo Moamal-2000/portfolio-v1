@@ -1,4 +1,4 @@
-@import "src/Styles/mixins.scss";
+@use "src/Styles/mixins.scss" as m;
 
 .nav ul {
   display: flex;
@@ -6,7 +6,7 @@
   position: relative;
 }
 
-@include small {
+@include m.small {
   .nav ul {
     display: none;
   }
@@ -26,7 +26,7 @@
   }
 }
 
-@include medium {
+@include m.medium {
   .nav ul li a {
     padding: 1.3rem 1.5rem;
   }

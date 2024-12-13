@@ -1,27 +1,30 @@
+@use "./mixins" as m;
+@use "./variables" as v;
+
 .container {
   width: 79%;
   margin: 0 auto;
 }
 
-@include large {
+@include m.large {
   .container {
     width: 85%;
   }
 }
 
-@include medium {
+@include m.medium {
   .container {
     width: 90%;
   }
 }
 
-@include small {
+@include m.small {
   .container {
     width: 92%;
   }
 }
 
-@each $skill, $color in $my-skills-colors {
+@each $skill, $color in v.$my-skills-colors {
   .#{$skill}-color {
     transition: background-color .2s ease-in-out, color .2s ease-in-out;
 
@@ -32,7 +35,7 @@
   }
 }
 
-@each $media, $color in $social-media-color {
+@each $media, $color in v.$social-media-color {
   .#{$media}:hover {
     background-color: #{$color} !important;
 

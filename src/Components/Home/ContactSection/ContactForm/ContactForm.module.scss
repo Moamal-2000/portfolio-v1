@@ -1,4 +1,4 @@
-@import "src/Styles/mixins.scss";
+@use "src/Styles/mixins.scss" as m;
 
 .contactForm {
   background: #fff;
@@ -21,13 +21,13 @@
   flex: 1;
 }
 
-@include small {
+@include m.small {
   .form {
     padding: 3rem;
   }
 }
 
-@include very-small {
+@include m.very-small {
   .form {
     padding: 2rem;
   }
@@ -99,7 +99,7 @@
   }
 }
 
-@include small {
+@include m.small {
   .imgHolder {
     display: none;
   }

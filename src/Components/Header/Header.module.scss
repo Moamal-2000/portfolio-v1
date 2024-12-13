@@ -1,4 +1,4 @@
-@import "src/Styles/mixins.scss";
+@use "src/Styles/mixins.scss" as m;
 
 .header {
   padding: 2.5rem;
@@ -21,7 +21,7 @@
   margin: 0 auto;
 }
 
-@include small {
+@include m.small {
   .main-header {
     padding: 2.3rem 1.5rem;
   }
@@ -42,7 +42,7 @@
   background: rgba(var(--theme-color), 1);
 }
 
-@include small {
+@include m.small {
   .imgHolder {
     margin-right: 1rem;
   }

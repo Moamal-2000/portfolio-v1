@@ -1,4 +1,4 @@
-@import "src/Styles/mixins.scss";
+@use "src/Styles/mixins.scss" as m;
 
 .heroSection {
   display: flex;
@@ -7,7 +7,7 @@
   max-height: 120rem;
 }
 
-@include small {
+@include m.small {
   .heroSection {
     height: unset;
     min-height: unset;
@@ -20,7 +20,7 @@
   animation: downToUp .8s;
 }
 
-@include small {
+@include m.small {
   .content {
     margin: 0 auto;
     padding: 15rem 0 10rem 0;
@@ -33,7 +33,7 @@
   gap: 24px;
 }
 
-@include very-small {
+@include m.very-small {
   .heroSection .buttons {
     flex-direction: column;
     gap: 0;

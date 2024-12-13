@@ -1,7 +1,7 @@
-@import "./mixins.scss";
-@import "./colors.scss";
-@import "./variables.scss";
-@import "./globalClasses.scss";
+@use "./mixins" as m;
+@use "./colors" as c;
+@use "./variables" as v;
+@use "./globalClasses" as gc;
 @import "./fonts.css";
 
 * {
@@ -15,19 +15,19 @@ html {
   scroll-behavior: smooth;
 }
 
-@include large {
+@include m.large {
   html {
     font-size: 60%;
   }
 }
 
-@include medium {
+@include m.medium {
   html {
     font-size: 58%;
   }
 }
 
-@include small {
+@include m.small {
   html {
     font-size: 56%;
   }

@@ -1,4 +1,4 @@
-@import "src/Styles/mixins.scss";
+@use "src/Styles/mixins.scss" as m;
 
 .aboutSection {
   background-color: #fcfcfc;
@@ -11,7 +11,7 @@
   grid-gap: 8rem;
 }
 
-@include large {
+@include m.large {
   .wrapper {
     grid-template-columns: 1fr;
     grid-gap: 6rem;

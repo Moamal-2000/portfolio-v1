@@ -1,4 +1,4 @@
-@import "src/Styles/mixins.scss";
+@use "src/Styles/mixins.scss" as m;
 
 .socialMedia {
   --media-box-size: 50px;
@@ -9,7 +9,7 @@
   margin-top: 60px;
 }
 
-@include small {
+@include m.small {
   .socialMedia {
     min-width: calc((4 * var(--media-box-size)) + (3 * var(--gap)));
     margin-top: 30px;
@@ -17,7 +17,7 @@
   }
 }
 
-@include very-small {
+@include m.very-small {
   .socialMedia {
     justify-content: flex-start;
     margin: 30px auto 0;
@@ -27,7 +27,7 @@
 .socialMedia li a {
   width: var(--media-box-size);
   height: var(--media-box-size);
-  @include center-x-y;
+  @include m.center-x-y;
   background: #333;
   color: rgba(255, 255, 255, .8);
   transition: background-color .3s ease-in-out;

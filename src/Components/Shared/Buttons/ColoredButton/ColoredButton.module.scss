@@ -1,4 +1,4 @@
-@import "src/Styles/mixins.scss";
+@use "src/Styles/mixins.scss" as m;
 
 .button {
   color: #fff;
@@ -14,7 +14,7 @@
   text-wrap: nowrap;
 }
 
-@include small {
+@include m.small {
   .button {
     display: block;
     text-align: center;

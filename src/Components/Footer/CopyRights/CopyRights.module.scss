@@ -1,4 +1,4 @@
-@import "src/Styles/mixins.scss";
+@use "src/Styles/mixins.scss" as m;
 
 .copyrights {
   width: 270px;
@@ -7,13 +7,13 @@
   font-size: 1.5rem;
 }
 
-@include small {
+@include m.small {
   .copyrights {
     margin-top: 30px;
   }
 }
 
-@include very-small {
+@include m.very-small {
   .copyrights {
     width: 100%;
   }

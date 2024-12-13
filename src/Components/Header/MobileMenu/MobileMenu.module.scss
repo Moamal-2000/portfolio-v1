@@ -1,4 +1,4 @@
-@import "src/Styles/mixins.scss";
+@use "src/Styles/mixins.scss" as m;
 
 .navButton {
   border: none;
@@ -10,7 +10,7 @@
   display: none;
 }
 
-@include small {
+@include m.small {
   .navButton {
     display: block;
   }
@@ -39,7 +39,7 @@
   left: 0;
   width: 100%;
   height: 100vh;
-  @include center-x-y;
+  @include m.center-x-y;
   translate: -100% 0;
   transition: translate 0.5s;
 

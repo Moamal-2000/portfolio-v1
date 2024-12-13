@@ -1,4 +1,4 @@
-@import "src/Styles/mixins.scss";
+@use "src/Styles/mixins.scss" as m;
 
 .themeSelector {
   border: none;
@@ -7,7 +7,7 @@
   top: 50%;
   right: 0;
   translate: 0 -50%;
-  @include center-x-y;
+  @include m.center-x-y;
   background: #fff;
   border-radius: 50%;
   z-index: 10;
@@ -17,7 +17,7 @@
   height: 48px;
 }
 
-@include small {
+@include m.small {
   .themeSelector {
     top: 100%;
     translate: 0 -100%;
